@@ -43,32 +43,32 @@ export default function Home() {
       
   return (
     <>
-    <Header theme="text-white" />
-    <div className="w-full flex flex-col items-center">
+    <Header theme="text-white"/>
+    <div className="w-full flex flex-col items-center -z-10">
       <div className="w-full bg-black h-full lg:h-screen flex flex-col lg:flex-row justify-center px-10 lg:px-[100px] xl:px-[150px]">
         <div className="hero w-full flex flex-col justify-center xl:pt-[50px] lg:w-6/12 2xl:w-7/12 pt-28">
           <h1 className="text-[25px] text-white font-light md:text-4xl 2xl:text-5xl">Suarakan <span className="font-bold">aspirasi</span> anda <br />untuk <span className="font-bold">Jawa Barat</span> lebih baik</h1>
-          <span className="text-white mt-4 mb-8 opacity-50 font-light text-sm md:w-[600px] md:text-sm lg:text-sm xl:text-sm">
+          <span className="text-white mt-4 mb-8 opacity-50 font-light text-sm md:w-8/12 md:text-sm lg:text-sm xl:text-sm">
           Jabar Research adalah media independen dan yang tidak berafiliasi dengan pihak manapun, segala data yang dikirimkan dan dipublikasikan adalah data sebenarnya dari audiens.
           </span>
-          <div className="grid grid-cols-2 lg:grid-cols-4 lg:w-[90%]"> 
+          <div className="grid grid-cols-2 lg:grid-cols-4 lg:w-full xl:w-10/12"> 
             <Link href="/aspirasi/infrastruktur">
-            <button type="button" className="w-[150px] text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+            <button type="button" className="lg:w-[100px] w-[150px] 2xl:w-[150px] text-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
               Infrastruktur
             </button>
             </Link>
             <Link href="/aspirasi/pendidikan">
-            <button type="button" className="w-[150px] text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+            <button type="button" className="lg:w-[100px] w-[150px] 2xl:w-[150px] text-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
               Pendidikan
             </button>
             </Link>
             <Link href="/aspirasi/ekonomi">
-            <button type="button" className="w-[150px] text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+            <button type="button" className="lg:w-[100px] w-[150px] 2xl:w-[150px] text-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
               Ekonomi
             </button>
             </Link>
             <Link href="/aspirasi/kesehatan">
-            <button type="button" className="w-[150px] text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
+            <button type="button" className="lg:w-[100px] w-[150px] 2xl:w-[150px] text-center text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-full text-sm py-2.5 mr-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
               Kesehatan
             </button>
             </Link>
@@ -98,9 +98,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="w-full lg:h-screen flex flex-col lg:flex-row justify-center">
-        <div className="mt-5 md:mt-0 px-10 xl:px-32 flex flex-col justify-center w-full">
-          <h1 className="mx-auto mb-4 text-gray-600 lg:text-xl font-semibold text-center">Daftar 10 Calon Presiden dengan Voting Terbanyak</h1>
+      <div className="w-full lg:h-full flex flex-col lg:flex-row justify-center">
+        <div className="mt-5 md:mt-0 p-10 flex flex-col justify-center w-full lg:w-6/12">
+          <h1 className="mx-auto mb-4 text-gray-600 lg:text-xl font-semibold text-center ">Daftar 10 Calon Presiden dengan Voting Terbanyak</h1>
           <TopCapres />
           <div className="w-full text-center mt-12">
             <Link href="/2024/capres">
@@ -110,7 +110,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="mt-5 md:mt-0 px-10 xl:px-32 flex flex-col justify-center w-full bg-gray-200">
+        <div className="mt-5 md:mt-0 p-10 flex flex-col justify-center bg-gray-200 w-full lg:w-6/12">
           <h1 className="mx-auto mt-5 lg:mt-0 mb-4 text-gray-600 lg:text-xl font-semibold">Daftar 10 Partai dengan Voting Terbanyak</h1>
           <TopPartai />
           <div className="w-full text-center mt-12 mb-6 lg:mb-0">

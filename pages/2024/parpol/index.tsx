@@ -126,8 +126,8 @@ export default function Parpol(props : PartaiProps) {
     <div className="">
         <Header theme="text-gray-700" />
         <div className="flex flex-col items-center bg-gray-100">
-            <div className="w-full h-screen flex flex-col lg:flex-row">
-                <div className="bg-gray-900 flex px-16 justify-center items-center lg:w-6/12 w-full h-full md:h-full lg:h-screen">                    
+            <div className="w-full lg:h-screen flex flex-col lg:flex-row">
+                <div className="bg-gray-900 flex px-16 justify-center items-center lg:w-6/12 w-full h-[600px] md:h-[450px] lg:h-screen">                    
                   <form onSubmit={storeVote} className="justify-items-center w-full">
                         <div className="shadow-2xl overflow-hidden rounded-lg lg:w-10/12 mx-auto">
                             <div className="px-4 py-5 bg-white sm:p-6 w-full flex justify-between flex-col md:flex-row">

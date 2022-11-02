@@ -209,7 +209,7 @@ export default function Navbar(props : ThemeProps) {
                         leaveFrom="transform opacity-100 scale-100"
                         leaveTo="transform opacity-0 scale-95"
                       >
-                        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-2 px-4 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+                        <Menu.Items className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-2 px-4 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-20">
                         {dataInsight.data.map((insight) => (
                           <a key={insight.id}>
                             <Menu.Item>
@@ -218,7 +218,7 @@ export default function Navbar(props : ThemeProps) {
                                   onClick = {(e) => handleInsight(insight.slug, e)}
                                   className={classNames(active ? 'bg-gray-100' : '', 'block px-4 py-2 text-sm text-gray-700')}
                                 >
-                                  <a className="hover:text-gray-400" href="#">{insight.title}</a>
+                                  <span className="hover:text-gray-400 cursor-pointer">{insight.title}</span>
                                 </a>
                               )}
                             </Menu.Item>

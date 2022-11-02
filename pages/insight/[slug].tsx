@@ -161,7 +161,7 @@ export default function DetailInsight(props : QuestProps) {
         <Header theme="text-gray-700" />
         <div className="flex flex-col items-center w-full">
             <div className="w-full lg:h-screen flex flex-col lg:flex-row">
-              <div className="bg-black flex px-14 justify-center items-center lg:w-6/12 w-full h-[300px] md:h-[500px] lg:h-full">
+              <div className="bg-black flex px-14 justify-center items-center lg:w-6/12 w-full h-[500px] md:h-[500px] lg:h-full">
                 <div className="px-10 mt-12">
                   <Image
                   src={Hero}

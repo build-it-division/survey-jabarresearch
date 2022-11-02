@@ -44,7 +44,7 @@ export default function Suara(props : SuaraProps) {
             pathTransitionDuration: 2,
             textSize:"26px",
           })}>
-          <h5 className="text-black items-center text-center mt-20 md:mt-24 lg:mt-28 xl:mt-36 2xl:mt-52 text-sm lg:text-md xl:text-lg">Dari {total} aspirasi <br/> Tidak puas dengan kinerja <br/>{kategori} Jawa Barat</h5>
+          <h5 className="text-black items-center text-center mt-28 md:mt-32 lg:mt-28 xl:mt-44 2xl:mt-60 text-[12px] sm:text-md xl:text-lg">Dari {total} aspirasi <br/> Tidak puas dengan kinerja <br/>{kategori} Jawa Barat</h5>
           </CircularProgressbarWithChildren>
       </div>
     </div>

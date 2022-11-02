@@ -129,14 +129,14 @@ export default function AspirasiCreate(props : DataProps) {
 
     return (
         <>
-        <Header theme="text-gray-700"/>
+        <Header theme="text-gray-700" />
         <div className="flex flex-col items-center w-full">
-            <div className="w-full lg:h-screen flex flex-col lg:flex-row">
-                <Suara kategori="pendidikan"/>
-                <div className="mt-5 md:mt-0 flex flex-col justify-center items-center w-full lg:w-6/12">
-                    <h1 className="text-xl lg:text-2xl font-semibold text-gray-600 md:mt-10">Untuk Pendidikan Jawa Barat yang Lebih Baik</h1>
-                    <form onSubmit={ storePost } className="justify-items-center">
-                    <div className="shadow-2xl overflow-hidden sm:rounded-lg">
+            <div className="w-full lg:h-[100vh] flex flex-col lg:flex-row">
+                <Suara kategori="infrastruktur"/>
+                <div className="mt-5 md:mt-0 flex flex-col justify-center items-center w-full lg:w-9/12 xl:w-6/12">
+                    <h1 className="text-xl lg:text-xl font-semibold text-gray-600 md:mt-16">Untuk Pendidikan Jawa Barat yang Lebih Baik</h1>
+                    <form onSubmit={ storePost } className="flex justify-center">
+                    <div className="shadow-2xl overflow-hidden sm:rounded-lg xl:w-10/12">
                         <div className="px-4 py-5 bg-white sm:p-6">
                             <div className="grid grid-cols-6 gap-6">
                                 <div className="col-span-6 sm:col-span-3">
@@ -211,7 +211,7 @@ export default function AspirasiCreate(props : DataProps) {
                                     name="kota"
                                     autoComplete="kota"
                                     onChange={(e)=> handlecity(e)}
-                                    className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+                                    className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-   sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                                 >
                                     <option>Pilih Kota / Kabupaten</option>
                                     {kabupaten?.map((kab: { name: ReactNode; id: React.Key | null |  undefined; })=>(
@@ -251,7 +251,7 @@ export default function AspirasiCreate(props : DataProps) {
                                         onChange={(e) => setAspirasi(e.target.value)}
                                     />
                                 </div>
-                                <div className="col-span-6 items-center lg:px-20 2xl:px-20">
+                                <div className="col-span-6 items-center lg:px-5 xl:px-20">
                                     <label htmlFor="Kepuasan" className="block text-sm font-medium text-gray-700 text-center">
                                         Apakah anda sudah puas dengan kinerja pemerintah Jawa Barat saat ini?
                                     </label>
@@ -284,24 +284,16 @@ export default function AspirasiCreate(props : DataProps) {
                                                 }
                                                 Tidak Puas
                                         </button>
-                                    </div>
-                                </div>
+                                    </div>  
+                                </div> 
                             </div>
-                        </div>
-                        <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
-                        {/*<button
-                            type="submit"
-                            className="inline-flex justify-center py-2 px-4 w-full lg:w-1/4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                        >
-                            Kirim
-                                    </button>*/}
+                                <h5 className="text-xs lg:text-xs font-regular text-gray-600 w-full">
+                                * Jabar Research adalah media independen dan yang tidak berafiliasi dengan pihak manapun, segala data yang
+                                dikirimkan dan dipublikasikan adalah data sebenarnya dari audiens.  
+                                </h5>
                         </div>
                     </div>
                     </form>
-                    <h5 className="text-xs lg:text-xs font-regular text-gray-600 md:mt-10 w-10/12">
-                        * Jabar Research adalah media independen dan yang tidak berafiliasi dengan pihak manapun, segala data yang
-                        dikirimkan dan dipublikasikan adalah data sebenarnya dari audiens.  
-                    </h5>
                 </div>
             </div>
         </div>
