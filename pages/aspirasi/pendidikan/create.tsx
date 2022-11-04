@@ -132,7 +132,7 @@ export default function AspirasiCreate(props : DataProps) {
         <Header theme="text-gray-700" />
         <div className="flex flex-col items-center w-full">
             <div className="w-full lg:h-[100vh] flex flex-col lg:flex-row">
-                <Suara kategori="infrastruktur"/>
+                <Suara kategori="pendidikan"/>
                 <div className="mt-5 md:mt-0 flex flex-col justify-center items-center w-full lg:w-9/12 xl:w-6/12">
                     <h1 className="text-xl lg:text-xl font-semibold text-gray-600 md:mt-16">Untuk Pendidikan Jawa Barat yang Lebih Baik</h1>
                     <form onSubmit={ storePost } className="flex justify-center">

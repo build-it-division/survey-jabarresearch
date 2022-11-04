@@ -160,8 +160,8 @@ export default function DetailInsight(props : QuestProps) {
     <>
         <Header theme="text-gray-700" />
         <div className="flex flex-col items-center w-full">
-            <div className="w-full lg:h-screen flex flex-col lg:flex-row">
-              <div className="bg-black flex px-14 justify-center items-center lg:w-6/12 w-full h-[500px] md:h-[500px] lg:h-full">
+            <div className="w-full flex flex-col lg:flex-row 2xl:h-screen">
+              <div className="bg-black flex px-14 justify-center items-center lg:w-6/12 w-full ">
                 <div className="px-10 mt-12">
                   <Image
                   src={Hero}
@@ -172,17 +172,20 @@ export default function DetailInsight(props : QuestProps) {
                 </div>
               
               </div>
-                <div className="mt-5 md:mt-0 flex flex-col justify-center items-center w-full lg:w-6/12">
-                    <h1 className="md:text-lg text-lg lg:text-2xl font-semibold text-gray-600 md:mt-10 text-center px-8">Berikan Pendapatmu Mengenai {Title}</h1>
+                <div className="mt-5 md:mt-0 flex flex-col justify-center items-center w-full lg:w-6/12 bg-gray-100 pt-12">
                     { FormStart == 'hidden' ?
-                      <button
+                      <div className="lg:py-[250px] xl:py-[330px] pt w-full flex flex-col items-center justify-center">
+                        <h1 className="md:text-lg text-lg lg:text-2xl font-semibold text-gray-600 md:mt-10 text-center px-8 mb-4">Berikan Pendapatmu Mengenai {Title}</h1>
+                        <button
                         onClick={(e) => handleStartForm(e)}
                         className="flex justify-center py-2 px-4 my-5 lg:w-1/4 border border-transparent shadow-sm text-sm font-medium rounded-full text-white bg-slate-600 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500"
                       >
                         Mulai Survey
                       </button>
+                      </div>
                     :
-                      <form onSubmit={storeAllResult} className="justify-items-center">
+                      <form onSubmit={storeAllResult} className="flex flex-col justify-center items-center">
+                        <h1 className="md:text-lg text-lg lg:text-2xl font-semibold text-gray-600 md:mt-10 text-center px-8 mb-4">Berikan Pendapatmu Mengenai {Title}</h1>
                       <div className="shadow-2xl overflow-hidden sm:rounded-lg w-10/12 mx-auto">
                           <div className="px-4 py-5 bg-white sm:p-6">
                               <div className="grid grid-cols-1 gap-6">
@@ -249,7 +252,7 @@ export default function DetailInsight(props : QuestProps) {
                                   )) }
                               </div>
                           </div>
-                          <div className="px-4 py-3 bg-gray-50 text-right sm:px-6">
+                          <div className="px-4 py-3 bg-gray-50 text-right sm:px-6 flex flex-row">
                           <button
                               type="submit"
                               disabled = {btnDisable}
@@ -266,12 +269,12 @@ export default function DetailInsight(props : QuestProps) {
                            </button>
                           </div>
                       </div>
+                      <h5 className="text-[8px] lg:text-xs font-regular text-gray-600 2xl:pb-5 mt-5 md:mt-5 w-10/12">
+                       * Jabar Research adalah media independen dan yang tidak berafiliasi dengan pihak manapun, segala data yang
+                       dikirimkan dan dipublikasikan adalah data sebenarnya dari audiens.  
+                     </h5>
                       </form>
                     }
-                    <h5 className="text-xs lg:text-xs font-regular text-gray-600 2xl:pb-5 mt-5 md:mt-5 w-10/12">
-                        * Jabar Research adalah media independen dan yang tidak berafiliasi dengan pihak manapun, segala data yang
-                        dikirimkan dan dipublikasikan adalah data sebenarnya dari audiens.  
-                    </h5>
                 </div>
             </div>
         </div>
